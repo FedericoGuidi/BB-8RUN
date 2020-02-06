@@ -1,0 +1,46 @@
+﻿<html>
+	<head>
+		<meta charset=utf-8>
+		<title>BB-8 RUN!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+        
+        <div id="TutContainer" style="position: absolute"></div>
+        <div id="score" class="score" style="display: none"></div>
+        <div id="highestScore" style="display: none">Record: 0m</div>
+        <div id="healthContainer" class="healthContainer" style="display: none">
+            <img src="images/heart.png" class="heart" id="heart1">
+            <img src="images/heart.png" class="heart" id="heart2">
+        </div>
+        <div id="audioContainer" class="audioContainer" style="display: none">
+            <img src="images/audio.png" class="audio" id="audioIcon">
+        </div>
+        
+        <div id="gameover-outer" style="display: none">
+            <div id="gameover-container">
+                <div id="gameover">
+                    <img src="images/game_over.png" style="width: 50%;">
+                    <br><br>
+                    <input type="button" id="tryagain" class="button btnPush btnOrange" value="Try Again">
+                </div>
+            </div>
+        </div>
+        
+		
+        <!--<script src="js/OrbitControls.js"></script>-->
+
+        <div id="startContainer">
+            <img src="images/logo.png" id="logo"/>
+            <div id="delayed" class="delayed">
+                <input type="button" id="startButton" class="button btnPush btnOrange" value="Start!">
+            </div>
+        </div>
+
+        <script src="js/three.js"></script>
+        <script src="js/splashscreen.js"></script>
+        <script src="js/main.js"></script>
+        
+        <audio src="music/Imperial%20March.mp3" id="audio" autoplay loop></audio>
+	</body>
+</html>
